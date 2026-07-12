@@ -1,0 +1,16 @@
+/* styles/NoResults.css */
+.no-results {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  opacity: 0.9;
+  overflow: hidden;
+}
+
+
+.no-results .query {
+  font-weight: 600;
+  color: #e63946;
+}

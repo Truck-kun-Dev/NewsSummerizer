@@ -1,0 +1,79 @@
+.Articles .ArticleContainer{
+    padding: 20px 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 10px;
+}
+
+.Articles h1{
+    color: var(--theme-color);
+}
+
+.Articles{
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+
+
+
+.Articles .loading-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  padding: 1.5rem;
+  color: var(--theme-color);
+}
+
+.Articles .loading-dots span.dot {
+  animation: blink 1.5s infinite;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.Articles .loading-dots span.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.Articles .loading-dots span.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.Articles .loading-dots span.dot:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+@keyframes blink {
+  0% { opacity: 0.2; }
+  20% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+
+.Articles .status-message.error {
+  color: #d32f2f;
+}
+
+.Articles .pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.Articles .pagination-controls button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--theme-color);
+  color: var(--theme-font-color);
+  cursor: pointer;
+}
+
+.Articles .page-info {
+  font-weight: bold;
+  color: var(--theme-color);
+}

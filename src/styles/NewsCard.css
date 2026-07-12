@@ -1,0 +1,44 @@
+.NewsCard{
+    display: inline-block;
+    width: 18rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--card-color);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.NewsCard:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.NewsCard img{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.NewsCard .card-body{
+    padding: 10px;
+    text-align: justify;
+}
+
+.NewsCard .card-text{
+    padding: 5px;
+    text-align: right;
+}
+
+.NewsCard .btn{
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--theme-color);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.NewsCard .hoverCard{
+    display: none;
+}

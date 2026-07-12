@@ -1,0 +1,11 @@
+:root{
+    --theme-color: #672586;
+    --theme-font-color: rgb(255, 255, 255);
+    --navbar-color: var(--theme-color);
+    --navbar-font-color: rgb(255, 255, 255);
+    --navbar-shadow-color: rgb(103, 37, 134);
+    --bg-color: rgb(229 218 233);
+    --footer-color: var(--theme-color);
+    --footer-font-color: rgb(255, 255, 255);
+    --card-color: #67258650;
+}

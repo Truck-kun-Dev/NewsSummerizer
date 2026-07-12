@@ -1,0 +1,30 @@
+.TopCategories{
+    width: 100%;
+}
+
+.TopCategories h1{
+    color: var(--theme-color);
+}
+
+.TopCategories .CategoryContainer{
+    width: 100%;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.TopCategories .Category{
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    min-width: 20%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-color);
+    color: var(--theme-font-color);
+}

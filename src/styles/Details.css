@@ -1,0 +1,90 @@
+.Details{
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px 50px;
+    color: var(--theme-color);
+}
+
+.Details .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: justify;
+}
+
+.Details .content h3,
+.Details .content h4{
+    align-self: start;
+}
+
+.Details .content img{
+    width: 80%;
+}
+
+.Details .btn,
+.Details a{
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    min-width: 20%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-color);
+    color: var(--theme-font-color);
+    text-decoration: none;
+}
+
+.Details .gemini-summary{
+    padding-left: 1.5rem;
+    overflow-wrap: break-word; 
+}
+
+.Details .gemini-summary li{
+    padding: 5px 0;
+}
+
+.Details .loading-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  padding: 1rem 0;
+  color: var(--theme-color);
+}
+
+.Details .loading-dots span.dot {
+  animation: blink 1.5s infinite;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.Details .loading-dots span.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.Details .loading-dots span.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.Details .loading-dots span.dot:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+@keyframes blink {
+  0% { opacity: 0.2; }
+  20% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+.Details .status-message {
+  font-size: 1rem;
+  color: var(--theme-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.Details .status-message.error {
+  color: #d32f2f;
+}
